@@ -1,6 +1,6 @@
 {
-  "name": "HotSpot-most-clicked",
-  "version": "1.0.0",
+  "name": "hot-spot",
+  "version": "1.0.1",
   "description": "To find the Most used and least used parts of your app.",
   "main": "index.js",
   "scripts": {
