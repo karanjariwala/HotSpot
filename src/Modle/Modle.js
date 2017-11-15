@@ -3,7 +3,7 @@ import Store from '../Store';
 
 class Modle{
     constructor(deffered,eventNames, numOfClicks){
-        this.deffered=deffered
+        this.deffered=deffered;
         this.numOfClicks=numOfClicks;
         this.eventNames=eventNames;
         this.store=new Store();
