@@ -1,14 +1,16 @@
-Class Store{  
+class Store{  
+    constructor(){
+        localStorage.setItem('hotSpot','[]');
+    }
     get(){
-        return JSON.parse(localStorage.getItem('hotSpot'))
+        return JSON.parse(localStorage.getItem('hotSpot'));
     }
     add(data){
-        const dataStr= JSON.stringify(this.get().push(data));
-        localStorage.removeItem('hotSpot');
-        localStorage.setItem('hotSpot',dataStr);
+        const newData= [...this.get(),data];
+        localStorage.setItem('hotSpot',JSON.stringify(newData));
     }
     reset(){
-        localStorage.removeItem('hotSpot');
+        localStorage.setItem('hotSpot','[]');
     }
 
 }
