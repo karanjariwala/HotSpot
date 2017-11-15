@@ -1,7 +1,18 @@
-const sayHello = () => {
-    /*eslint-disable no-console */
-    console.log("Allo! We are all set!");
-    console.log("Arrow functions are working great karan");
-};
+import Modle from './Modle/Modle.js';
+import Controller from './Controller/Controller.js';
+class HotSwap{
+    constructor(api, numOfClicks ){
+        this.modle= new Modle(api, numberOfClicks);
+        this.controller= new Controller(this.modle);
+    }
+ 
+}
+const app = (api,numberOfClicks)=>{
+    let hotSwapIns= new HotSwap(api,numberOfClicks);
+    hotSwapIns.modle.init();
+    Window.addeventListner('click',(e)=>{hotSwapIns.controller.handleClick(e)})
 
-sayHello();
+}
+
+
+export default app;

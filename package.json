@@ -14,7 +14,7 @@
   "keywords": [
     "es6"
   ],
-  "author": "Karan",
+  "author": "Karan Jariwala",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.24.1",
