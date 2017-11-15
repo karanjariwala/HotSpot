@@ -1,5 +1,5 @@
 {
-  "name": "HotSpot",
+  "name": "HotSpot-most-clicked",
   "version": "1.0.0",
   "description": "To find the Most used and least used parts of your app.",
   "main": "index.js",
