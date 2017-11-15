@@ -12,7 +12,7 @@ const app = (cb,eventNames, numOfClicks )=>{
     window.addEventListener("click",(e)=>{hotSwapIns.controller.handleClick(e)})}
 
 
-app((data)=>console.log(data),['className', 'id','innerHTML'],3);
+//app((data)=>console.log(data),['className', 'id','innerHTML'],3);
 
 
 
