@@ -1,14 +1,16 @@
+
 class Controller{
     constructor(modle){
         this.modle=modle;
     }
     handleClick(e){
-        Object.assign({},{
-            baseURI:e.target.baseURI,
-            tagName:e.target.tagName,
-            className:e.target.className,
-            id:e.target.id,
-            
-        })
+       const logEvnObject= {};
+        for(let i=0;i<this.modle.eventNames;i++){
+            logEvnObject[this.modle.eventNames[i]]=e.target[this.modle.eventNames[i]];
+        }
+        this.modle.addEvent(logEvnObject);
     }
 }
+
+
+export default Controller;

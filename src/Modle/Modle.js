@@ -2,9 +2,10 @@ import Store from '../Store';
 
 
 class Modle{
-    constructor(deffered, numOfClicks){
+    constructor(deffered,eventNames, numOfClicks){
         this.deffered=deffered
         this.numOfClicks=numOfClicks;
+        this.eventNames=eventNames;
         this.store=new Store();
         this.currentClick=this.store.get().length||0;
     }

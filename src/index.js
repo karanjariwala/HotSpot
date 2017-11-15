@@ -1,8 +1,8 @@
-import Modle from './Modle/Modle.js';
-import Controller from './Controller/Controller.js';
+import Modle from './Modle/Modle';
+import Controller from './Controller/Controller';
 class HotSwap{
-    constructor(api, numOfClicks ){
-        this.modle= new Modle(api, numberOfClicks);
+    constructor(cb,eventNames, numOfClicks ){
+        this.modle= new Modle(cb,eventNames, numberOfClicks, );
         this.controller= new Controller(this.modle);
     }
  
