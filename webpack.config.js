@@ -3,7 +3,7 @@ module.exports = {
     output: {
         path: __dirname + '/lib',
         publicPath: '/lib/',
-        filename: 'bundle.js'
+        filename: 'index.js'
     },
     module: {
         rules: [{
