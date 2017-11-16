@@ -1,6 +1,6 @@
 /**
  * @file index file
- * @author Milton Mazzarri <me@milmazz.uno>
+ * @author Karan Jariwala <karanjariwala@gmail.com>
  * @version 0.1
  */
 
@@ -9,7 +9,7 @@ import Modle from './Modle/Modle';
 import Controller from './Controller/Controller';
 
 class HotSpot{
-    /**
+/**
    * The HotSpot definition.
    *
    * @param {function} cb - Callback function
@@ -20,7 +20,6 @@ class HotSpot{
         this.modle= new Modle(cb,eventNames, numOfClicks);
         this.controller= new Controller(this.modle);
     }
- 
 }
 const app = (cb,eventNames, numOfClicks )=>{
     let hotSwapIns= new HotSpot(cb,eventNames, numOfClicks);
