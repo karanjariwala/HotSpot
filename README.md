@@ -2,6 +2,11 @@
 To find the Most used and least used parts of your app.
 
 ## Usage
-* `npm start` to run eslint on watch mode and dev-server at localhost:8080.
-* `npm run watch` to only watch for/recompile on changes.
-* `npm run build` to generate a minified, production-ready build.
+* import hotswap from node modules. 
+* hotswap function.
+* The HotSpot definition.
+* @param {function} cb - Callback function 
+* @param {array} eventNames - Array of keys of javascript event object you want to log.
+* @param {Number} numOfClicks - Number of clicks after which callback should get executed.
+* example "hotspot((data)=>console.log(data),['className', 'id','innerHTML'],3);"
+   
