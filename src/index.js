@@ -28,6 +28,5 @@ const app = (cb,eventNames, numOfClicks )=>{
 
 //app((data)=>console.log(data),['className', 'id','innerHTML'],3);
 
-
-
 export default app;
+
